@@ -1,0 +1,109 @@
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: blue;
+}
+
+.clock-container{
+    height: 30rem;
+    width: 30rem;
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    box-sizing: border-box;
+    border: 10px solid white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1000px;
+}
+
+.center-point{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 1000px;
+    z-index: 1;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hour12{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+} 
+
+.hour3{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top:200px;
+    right: 20px;
+}
+
+.hour6{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    left: 200px;
+    bottom: 10px;
+}
+
+.hour9{
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+.clock-timing{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 203px;
+    left:200px;
+}
+
+.hour-hand{
+     height: 8px;
+     width: 150px;
+     background-color: grey;
+     animation: rotate 0.1 linear infinite;
+     transform-origin:left;
+    animation: rotate 3600s steps(3600) infinite;
+     margin-left: 8px;
+     border-radius: 0px 5px 5px 0px;
+}
+
+.minute-hand{
+    height: 8px;
+    width: 170px;
+    background-color: blue;
+    transform-origin:left;
+    animation: rotate 60s steps(1) infinite;
+    margin-left: 8px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+.second-hand{
+    height: 8px;
+    width: 190px;
+    background-color: red;
+    transform-origin:left;
+    animation: rotate 60s steps(60) infinite;
+    margin-left: 8px;
+    border-radius: 0px 5px 5px 0px;
+}
