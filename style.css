@@ -85,7 +85,7 @@ body {
   width: 170px;
   background-color: blue;
   transform-origin: left;
-  /* animation: rotate 60s steps(1) infinite; */
+  animation: rotate steps(1) infinite;
   margin-left: 8px;
   border-radius: 0px 5px 5px 0px;
 }
@@ -101,7 +101,7 @@ body {
   width: 190px;
   background-color: red;
   transform-origin: left;
-  /* animation: rotate 60s steps(60) infinite; */
+  animation: rotate 60s steps(60) infinite;
   margin-left: 8px;
   border-radius: 0px 5px 5px 0px;
 }
