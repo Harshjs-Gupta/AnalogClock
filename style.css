@@ -22,8 +22,8 @@ body {
 }
 
 .center-point {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   background-color: black;
   border-radius: 1000px;
   z-index: 1;
