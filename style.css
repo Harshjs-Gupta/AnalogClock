@@ -2,6 +2,8 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background-image: url(backGround.jpg);
+  background-size: cover;
 }
 
 .clock-container {
@@ -15,15 +17,16 @@ body {
 }
 
 .center-point {
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   background-color: black;
   border-radius: 1000px;
   z-index: 1;
   position: absolute;
   top: 230px;
-  left: 220px;
+  left: 230px;
 }
+
 .hour1 {
   font-size: 30px;
   font-weight: 600;
@@ -124,40 +127,47 @@ body {
   width: 30px;
   background-color: transparent;
   position: fixed;
-}
+}*/
 
 .hour-hand {
-  height: 8px;
+  height: 5px;
   width: 150px;
-  background-color: grey;
+  background-color: #00818a;
   animation: rotate 0.1 linear infinite;
   transform-origin: left;
   margin-left: 8px;
-  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  top: 235px;
+  left: 50%;
 }
 
 .minute-hand {
-  height: 8px;
-  width: 170px;
-  background-color: blue;
+  height: 3px;
+  width: 180px;
+  background-color: #00818a;
   transform-origin: left;
   animation: rotate steps(1) infinite;
-  margin-left: 8px;
   border-radius: 0px 5px 5px 0px;
-} */
+  position: absolute;
+  top: 235px;
+  left: 50%;
+}
 
-/* @keyframes rotate {
+@keyframes rotate {
   0% {
     transform: rotate(-360deg);
   }
-} */
+}
 
-/* .second-hand {
-  height: 8px;
-  width: 190px;
-  background-color: red;
+.second-hand {
+  height: 2px;
+  width: 200px;
+  color: #00818a;
+  background-color: #00818a;
   transform-origin: left;
   animation: rotate 60s steps(60) infinite;
-  margin-left: 8px;
   border-radius: 0px 5px 5px 0px;
-} */
+  position: absolute;
+  top: 235px;
+  left: 50%;
+}
